@@ -19,31 +19,6 @@ This project performs **abstractive text summarization** using the **Facebook BA
 
 ---
 
-## 🗂️ Project Structure
-text-summarization/  
-│  
-├── src/  
-│ ├── components/ # Data ingestion, transformation, training, etc.  
-│ ├── pipeline/ # Prediction pipeline  
-│ ├── configuration.py # Config management  
-| ├── exception.py  
-│ ├── logger.py  
-| ├── constant.py  
-| ├── entity.py  
-│ └── utils.py  
-│  
-├── artifacts/ # Saved datasets, models, logs
-├── templates/
-│ └── index.html # Web interface (Flask)
-├── app.py # Flask web app for prediction
-├── paras.yaml
-├── template.py
-├── setup.py
-├── requirements.txt
-├── main.py # Script to run full training pipeline
-├── config.yaml # Training and model config
-└── README.md # This file
-
 ## 📸 Demo
 
 Here’s what the summarization web interface looks like:
