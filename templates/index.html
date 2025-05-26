@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Summarizer</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+        textarea { width: 100%; height: 150px; margin-bottom: 20px; }
+        input[type="submit"] { padding: 10px 20px; }
+        .summary-box { background-color: #f9f9f9; padding: 15px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Text Summarization</h1>
+    <form method="POST">
+        <label for="text">Enter your text:</label><br>
+        <textarea name="text" required>{{ request.form.text or '' }}</textarea><br>
+        <input type="submit" value="Summarize">
+    </form>
+
+    {% if summary %}
+        <h2>Summary:</h2>
+        <div class="summary-box">{{ summary }}</div>
+    {% endif %}
+</body>
+</html>
