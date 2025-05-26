@@ -1,0 +1,17 @@
+transformers
+datasets
+transformers[sentencepiece]
+torch
+scikit-learn
+pandas
+matplotlib
+ensure==1.0.2
+python-box==6.0.2
+pandas
+tqdm
+evaluate
+nltk
+absl-py
+rouge_score
+flask
+-e .
