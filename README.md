@@ -20,7 +20,7 @@ This project performs **abstractive text summarization** using the **Facebook BA
 ---
 
 ## 🗂️ Project Structure
-text-summarization/
+text-summarization/  
 │
 ├── src/
 │ ├── components/ # Data ingestion, transformation, training, etc.
